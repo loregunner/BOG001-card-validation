@@ -1,14 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="general">
+    <div id="resumen">
+      <h1> ACA VA EL RESUMEN FACTURA </h1>
+    </div>
+    <div id="logo">
+      <h1> Aca VA EL LOGO </h1>
+    </div>
+    <div id="body">
+
+      <h3>Informacion Factura</h3><br>
+      <label> <input type='text' id='nombres' placeholder="Nombres y Apellidos" required></label><br>
+      <label><input type='text' id="ciudad" placeholder="Ciudad"></label> <br>
+      <label><input type='text' id='direccion' placeholder="Direccion"></label> <br>
+      <label><input type="text" id="celular" placeholder="Telefono contacto"> </label> <br>
+      <br>
+      <br>
+
+      <h3>Informacion Tarjeta</h3><br>
+      <br>
+      <div class="card">
+        <div class="row-mt-7" Tipo de Tarjeta></div>
+        <br>
+        <input type="radio" name="tipoTarjeta" id="tipoDebito" required> Debito
+        <input type="radio" name="tipoTarjeta" id="tipoCredito" required>Credito <br>
+
+        <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="numero de tarjeta"
+            class="form-control creditCarnumberinput" required></label> <br>
+        <label><input type='text' id="nombresTitular" placeholder="Nombre como aparece en la tarjeta" required></label>
+        <br>
+        T.i<label>
+          <select name='menu'>
+            <option>C.C.</option>
+            <option>T.I.</option>
+            <option>C.E.</option>
+            <option>P.</option>
+          </select>
+        </label>
+
+        #ID
+        <label><input type='text' id="idPersona" placeholder="Numero documento" required></label><br>
+
+        <label><input type='number' name="numero" id='numeroCuotas' placeholder="#Cuotas" required size="7"></label>
+        <label><input type='month' id="expiracionTarjeta" placeholder=" MM/DD" required size="7"></label>
+        <input type="password" id="codigoT" placeholder="CCV" required size="7"></label><br>
+        <br>
+        <br>
+
+        <h3>Envio de Factura</h3><br>
+
+        <label><input type='text' id='CiudadT' placeholder="Ciudad"></label> <br>
+        <label><input type="text" id="direccionT" placeholder="Dirección"> </label> <br>
+      
     <script src="index.js" type="module"></script>
-  </body>
+
+    <br>
+    <br>
+    <br>
+
+    <button id=boton onclick="getData()"> Realizar Pago </button>
+    <script>
+      function getData() {
+
+        var nombre = document.getElementById("nombres").value;
+        var creditCardNumber = document.getElementById("creditCardNumber").value;
+
+        // console.log(getData)
+        console.log(nombre, creditCardNumber);
+        localStorage.setItem("nombre", nombre);
+        localStorage.setItem("creditCardNumber", creditCardNumber);
+        //  window.location.href = 'indexP4.html' 
+      }
+      function agregar() {
+        var arrayInput = new Array();
+        var inputsValue = document.getElementsByClassName('creditCarnumberinput');
+        creditoValue = [].map.call(inputsValue, function (dataInput) {
+          arrayInput.push(dataInput.value);
+
+
+        });
+        arrayInput.forEach(function (inputsValue) {
+          console.log("numero en array" + inputsValue);
+        });
+
+
+      }
+
+
+    </script>
+  </div>
+  </div>
+
+  <br>
+  <br>
+
+  </div>
+
+  </div>
+  <header>
+    <script src="validator.js" type="module"></script>
+
+  </header>
+  <main></main>
+  <footer>
+  </footer>
+
+</body>
+
 </html>
