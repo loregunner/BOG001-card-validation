@@ -1,119 +1,77 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <title>Misuteri shop</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
-
 <body>
-
+<header>
+  <div id="logo">
+    <div id="logito">
+      <h1> Misuteri shop </h1>
+    </div>
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #fff;"></path>
+      </svg></div>
+  </div>
+    <main>
+      <h3>Factura</h3><br>
+      <label> <input type='text' id='nombres' class="filded" placeholder="Nombres y Apellidos" required></label><br>
+      <label><input type='text' id="ciudad" class="filded" placeholder="Ciudad"></label> <br>
+      <label><input type='text' id='direccion' class="filded" placeholder="Direccion"></label> <br>
+      <label><input type="text" id="celular" class="filded" placeholder="Telefono contacto"> </label>
+      <br>
+     <br>
+     <br>
+      <h3>Informacion de tarjeta</h3>
+      <br>
+      <input type="radio" name="tipoTarjeta" id="tipoDebito" required> Debito
+      <input type="radio" name="tipoTarjeta" id="tipoCredito" required>Credito <br>
+      <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="numero de tarjeta"
+          class="filded" required></label> <br>
+      <label><input type='text' id="nombresTitular" class="filded" placeholder="Nombre titular de la tarjeta"
+          required></label>
+      <br>
+      T.i<label>
+        <select name='menu'class="fildod">
+          <option>C.C.</option>
+          <option>T.I.</option>
+          <option>C.E.</option>
+          <option>P.</option>
+        </select>
+      </label>
+      #ID
+      <label><input type='text' id="idPersona" class="filded" placeholder="Numero documento" required></label><br>
+      <label><input type='number' name="numero" id='numeroCuotas' class="fildod" placeholder="#Cuotas" required
+          size="7"></label>
+      <label><input type='month' id="expiracionTarjeta" class="filded" placeholder=" MM/DD" required size="7"></label>
+      <input type="password" id="codigoT" class="filded" placeholder="CCV" required size="7"></label>
+      </div>
+      <br>
+      <br>
+      <br>
+      <h3>Envio de Factura</h3>
+      <br>
+      <label><input type='text' id='CiudadT' class="filded" placeholder="Ciudad"></label> <br>
+      <label><input type="text" id="direccionT" class="filded" placeholder="Dirección"> </label> <br>
+      <script src="index.js" type="module"></script>
+      <br>
+      <br>
+      <br>
+      <button id="BotonTarjeta" class="btn btn-violet"> Realizar Pago </button>
+    </main>
   <div id="general">
-    <div id="resumen">
-      <h1> ACA VA EL RESUMEN FACTURA </h1>
-    </div>
-    <div id="logo">
-      <h1> Aca VA EL LOGO </h1>
-    </div>
-    <div id="body">
-
-      <h3>Informacion Factura</h3><br>
-      <label> <input type='text' id='nombres' placeholder="Nombres y Apellidos" required></label><br>
-      <label><input type='text' id="ciudad" placeholder="Ciudad"></label> <br>
-      <label><input type='text' id='direccion' placeholder="Direccion"></label> <br>
-      <label><input type="text" id="celular" placeholder="Telefono contacto"> </label> <br>
-      <br>
-      <br>
-
-      <h3>Informacion Tarjeta</h3><br>
-      <br>
-      <div class="card">
-        <div class="row-mt-7" Tipo de Tarjeta></div>
-        <br>
-        <input type="radio" name="tipoTarjeta" id="tipoDebito" required> Debito
-        <input type="radio" name="tipoTarjeta" id="tipoCredito" required>Credito <br>
-
-        <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="numero de tarjeta"
-            class="form-control creditCarnumberinput" required></label> <br>
-        <label><input type='text' id="nombresTitular" placeholder="Nombre como aparece en la tarjeta" required></label>
-        <br>
-        T.i<label>
-          <select name='menu'>
-            <option>C.C.</option>
-            <option>T.I.</option>
-            <option>C.E.</option>
-            <option>P.</option>
-          </select>
-        </label>
-
-        #ID
-        <label><input type='text' id="idPersona" placeholder="Numero documento" required></label><br>
-
-        <label><input type='number' name="numero" id='numeroCuotas' placeholder="#Cuotas" required size="7"></label>
-        <label><input type='month' id="expiracionTarjeta" placeholder=" MM/DD" required size="7"></label>
-        <input type="password" id="codigoT" placeholder="CCV" required size="7"></label><br>
-        <br>
-        <br>
-
-        <h3>Envio de Factura</h3><br>
-
-        <label><input type='text' id='CiudadT' placeholder="Ciudad"></label> <br>
-        <label><input type="text" id="direccionT" placeholder="Dirección"> </label> <br>
-      
-    <script src="index.js" type="module"></script>
-
-    <br>
-    <br>
-    <br>
-
-    <button id=boton onclick="getData()"> Realizar Pago </button>
-    <script>
-      function getData() {
-
-        var nombre = document.getElementById("nombres").value;
-        var creditCardNumber = document.getElementById("creditCardNumber").value;
-
-        // console.log(getData)
-        console.log(nombre, creditCardNumber);
-        localStorage.setItem("nombre", nombre);
-        localStorage.setItem("creditCardNumber", creditCardNumber);
-        //  window.location.href = 'indexP4.html' 
-      }
-      function agregar() {
-        var arrayInput = new Array();
-        var inputsValue = document.getElementsByClassName('creditCarnumberinput');
-        creditoValue = [].map.call(inputsValue, function (dataInput) {
-          arrayInput.push(dataInput.value);
-
-
-        });
-        arrayInput.forEach(function (inputsValue) {
-          console.log("numero en array" + inputsValue);
-        });
-
-
-      }
-
-
-    </script>
+    <h1>Resumen de la factura</h1>
   </div>
-  </div>
-
   <br>
   <br>
-
-  </div>
-
-  </div>
-  <header>
-    <script src="validator.js" type="module"></script>
-
-  </header>
-  <main></main>
+  <script src="validator.js" type="module"></script>
   <footer>
   </footer>
-
+</header>
 </body>
-
 </html>
