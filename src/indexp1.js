@@ -3,3 +3,4 @@ function GpQ(){
   }
   const boton1 = document.getElementById("botonCategoria1");
   boton.addEventListener("click", GpQ);
+  export default indexP1;
