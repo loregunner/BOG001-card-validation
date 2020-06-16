@@ -14,8 +14,6 @@
     </div>
     <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
         style="height: 100%; width: 100%;">
-        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          style="stroke: none; fill: #ffffff;"></path>
       </svg></div>
   </div>
     <main>
@@ -32,27 +30,25 @@
      <br>
       <h3>Información de tarjeta</h3>
       <br>
-      <input type="radio" name="tipoTarjeta" id="tipoDebito" required> Debito 
-      <input type="radio" name="tipoTarjeta" id="tipoCredito" required>Credito <br>
+      <input type="radio" name="tipoTarjeta" id="tipoDebito" class='radiob' required> Debito 
+      <input type="radio" name="tipoTarjeta" id="tipoCredito" class='radiob' required>Credito <br>
       <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="Numero de tarjeta"
           class="filded" required></label> <br>
           <br>
       <label><input type='text' id="nombresTitular" class="filded" placeholder="Nombre titular de la tarjeta"
-          required></label>
+          required></label><br>
       <br>
-      <br>
-      T.i<label>
-        <select name='menu'class="fildod">
+         <select name='menu'class="fildud">
+           T.I
           <option>C.C.</option>
           <option>T.I.</option>
           <option>C.E.</option>
           <option>P.</option>
         </select>
       </label>
-      <br>
-      <br>
       #ID
       <label><input type='text' id="idPersona" class="fildid" placeholder="Numero documento" required></label><br>
+      <br>
       <label><input type='number' name="numero" id='numeroCuotas' class="fildod" placeholder="#Cuotas" required
           size="7"></label>
       <label><input type='month' id="expiracionTarjeta" class="fildod" placeholder=" MM/DD" required size="7"></label>

@@ -72,18 +72,19 @@
       text-align: center;
   }
   .fildod
-  {  position: center;
+  {  position: initial;
     font-family: Goudy;
     color: rgb(148, 28, 179);
     padding: 7px;
-    width: 100px;
+    width: 70px;
+    height: 30px;
     left: 100px;
     border:2px solid hsla(272, 58%, 35%, 0.288);
     border-radius: 4px;
   }
 
 .fildid{
-    position: center;
+    position: absolute;
     font-family: Goudy;
     color: rgba(149, 28, 179, 0.247);
     padding: 5px;
@@ -93,15 +94,16 @@
 
 }
 form{
-    width: 1000px;
+    width: 400px;
     margin: 900px;
     background: #ad07ad1e;
     border: none;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 7px;
+    text-align: center;
 
     
 }
@@ -135,4 +137,28 @@ form{
     color: rgba(144, 14, 57, 0.89);
     font-size: 25px;
     text-align: left center;
+}
+.radiob{
+    font-family: Goudy;
+    color: rgba(149, 28, 179, 0.247);
+    width: 85px;
+
+}
+.titulo1{
+    font-family:Goudy;
+    color: #900e39c4;
+    font-size: 25px;
+    text-align: initial;
+}
+.fildud{
+    position: initial;
+    font-family: Goudy;
+    color: rgb(148, 28, 179);
+    padding: 7px;
+    width: 70px;
+    height: 30px;
+    left: 100px;
+    border:2px solid hsla(272, 58%, 35%, 0.288);
+    border-radius: 4px;
+   
 }
