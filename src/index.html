@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Misuteri shop</title>
@@ -7,53 +8,44 @@
   <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
 </head>
 <body>
-  <div class="ventana" id="vent"><img src="logo1.jpg" id="foto2">
-    <div id="cerrar"><a href="javascript:cerrar()"><img src="./cerrar.png">
-
-        </a></div>
-     <script>
-       
-     </script>
-</div>
-<header>
-  <div id="logo">
-    <div id="logito">
-      <h1> Misuteri shop </h1>
+  <header>
+    <div id="logo">
+      <div id="logito">
+        <h1> Misuteri shop </h1>
+      </div>
+      <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+          style="height: 100%; width: 100%;">
+        </svg></div>
     </div>
-    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-        style="height: 100%; width: 100%;">
-      </svg></div>
-  </div>
     <main>
       <h3>Factura</h3><br>
-      <label> <input type='text' id='nombres' class="filded" placeholder="Nombres y Apellidos" required></label
-        ><br>
-        <br>
+      <label> <input type='text' id='nombres' class="filded" placeholder="Nombres y Apellidos" required></label><br>
+      <br>
       <label><input type='text' id="ciudad" class="filded" placeholder="Ciudad"></label> <br>
       <br>
       <label><input type='text' id='direccion' class="filded" placeholder="Dirección"></label> <br>
       <br>
       <label><input type="text" id="celular" class="filded" placeholder="Telefono contacto"> </label>
       <br>
-     <br>
+      <br>
       <h3>Información de tarjeta</h3>
       <br>
-      <input type="radio" name="tipoTarjeta" id="tipoDebito" class='radiob' required> Debito 
+      <input type="radio" name="tipoTarjeta" id="tipoDebito" class='radiob' required> Debito
       <input type="radio" name="tipoTarjeta" id="tipoCredito" class='radiob' required>Credito <br>
       <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="Numero de tarjeta"
           class="filded" required></label> <br>
-          <br>
+      <br>
       <label><input type='text' id="nombresTitular" class="filded" placeholder="Nombre titular de la tarjeta"
           required></label><br>
       <br>
       <h5 class="fildcd">T.I</h5>
-         <select class="select">
-          <option>C.C.</option>
-          <option>T.I.</option>
-          <option>C.E.</option>
-          <option>C.E.</option>
-          <option>P.</option>
-        </select>
+      <select class="select">
+        <option>C.C.</option>
+        <option>T.I.</option>
+        <option>C.E.</option>
+        <option>C.E.</option>
+        <option>P.</option>
+      </select>
       </label>
       <br>
       <label><input type='text' id="idPersona" class="fildid" placeholder="Numero documento" required></label><br>
@@ -72,17 +64,18 @@
       <br>
       <br>
       <br>
-      <button id="BotonTarjeta" class="btn btn-violet"> Realizar Pago </button>
+      <button id="BotonTarjeta"> Realizar Pago </button>
     </main>
     <form action="">
-        <h1>Resumen de la factura</h1>
+      <h1>Resumen de la factura</h1>
       <br>
     </form>
-  <br>
-  <script src="validator.js" type="module"></script>
-  <footer>
+    <br>
+    <script src="validator.js" type="module"></script>
+    <footer>
 
-  </footer>
-</header>
+    </footer>
+  </header>
 </body>
+
 </html>

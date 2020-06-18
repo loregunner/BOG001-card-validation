@@ -193,3 +193,10 @@ form{
     height: 30px;
     left: 100px;
 }
+    .ventana {background-color:greenyellow;
+    width: 20%;color:black;font-family: fantasy, Times, serif;
+    font-size: initial; text-align: left;padding: 33px ;min-height: 100px;border-radius: 30px;position: sticky;
+    left: 34%; top:40%; display: none; }
+    #cerrar {position: absolute; right: 3px; top: 1px;}
+    #foto2{width: 70px; display: -ms-flexbox;}
+    #bloqueo{position: absolute; right: 3px; top: 1px;}
