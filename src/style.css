@@ -200,3 +200,52 @@ form{
     #cerrar {position: absolute; right: 3px; top: 1px;}
     #foto2{width: 70px; display: -ms-flexbox;}
     #bloqueo{position: absolute; right: 3px; top: 1px;}
+
+    header{
+        width: 100%;
+        height: 500px;
+        background-image: url(./logo.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .textos{
+        padding: 300px;
+        text-align: center;
+        color: darkmagenta;
+    }
+    h8{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px;
+        width: 70px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+    a:hover{
+        background-color: #9932cc38; color: #ffffff; border: 1px #9932cc38 ;
+    }
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        overflow: auto;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #7005702a;
+    }

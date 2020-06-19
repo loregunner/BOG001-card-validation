@@ -2,10 +2,10 @@ const validator = {
 
   isvalid: (creditCardNumber1) => {
 
-    const aNumeroTarjeta = Array.from(creditCardNumber1);
+    let aNumeroTarjeta = Array.from(creditCardNumber1);
     console.log(aNumeroTarjeta)
 
-    const aInvertido = aNumeroTarjeta.reverse();
+    let aInvertido = aNumeroTarjeta.reverse();
     console.log(aInvertido)
 
     aInvertido.forEach(function (element, index) {
@@ -16,7 +16,7 @@ const validator = {
 
       aInvertido[index] = element;
 
-      console.log(aInvertido);
+      console.log(aNumeroTarjeta);
 
     });
 
@@ -33,11 +33,15 @@ const validator = {
     var division = suma % 10
     console.log(division);
 
-    if (division === 0) { return true } else { return false }
+    if (division === 0) { alert('tu tarjeta es valida') }
+    else { alert('tu tarjeta es invalidad') }
+
   },
+  maskify: (aNumeroTarjeta) => aNumeroTarjeta.slice(0, -4).fill('#') + aNumeroTarjeta.slice(-4),
+  
+};
 
 
-  maskify: (aNumeroTarjeta) => aNumeroTarjeta.slice(0, -4).fill('#') + aNumeroTarjeta.slice(-4)
-}
+
 
 export default validator;
