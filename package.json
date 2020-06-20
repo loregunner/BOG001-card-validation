@@ -21,6 +21,8 @@
     "htmlhint": "^0.11.0",
     "jest": "^24.9.0",
     "opener": "^1.5.1",
-    "serve": "^11.0.0"
+    "serve": "^11.0.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^9.15.1"
   }
 }
