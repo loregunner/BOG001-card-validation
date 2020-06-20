@@ -14,51 +14,31 @@
     <div id="logito">
       <h1> Misuteri shop </h1>
     </div>
-    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewbox="0 0 500 150" preserveaspectratio="none"
         style="height: 100%; width: 100%;">
       </svg></div>
   </div>
   <header>
-    <div class="textos">
-      <h8>ventana con la info</h8><br>
-      <a href="#" id='abrir'>probando</a>
-    </div>
-    <div id="mimodal" class="modal">
-      <div class="flex" id="flex">
-        <div class="contenido-modal">
-          <div class="modal-header flex">
-            <h9>sigo probando</h9>
-            <span class="close" id="close">&times;</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal-body">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, doloribus.</p>
-    </div>
-    <div class="modal-footer">
-      <h4>fianlizando &copy;</h4>
-    </div>
   </header>
   <main>
     <h3>Factura</h3><br>
-    <label> <input type='text' id='nombres' class="filded" placeholder="Nombres y Apellidos" required></label><br>
+    <label> <input type="text" id="nombres" class="filded" placeholder="Nombres y Apellidos" required></label><br>
     <br>
-    <label><input type='text' id="ciudad" class="filded" placeholder="Ciudad"></label> <br>
+    <label><input type="text" id="ciudad" class="filded" placeholder="Ciudad"></label> <br>
     <br>
-    <label><input type='text' id='direccion' class="filded" placeholder="Dirección"></label> <br>
+    <label><input type="text" id="direccion" class="filded" placeholder="Dirección"></label> <br>
     <br>
     <label><input type="text" id="celular" class="filded" placeholder="Telefono contacto"> </label>
     <br>
     <br>
     <h3>Información de tarjeta</h3>
     <br>
-    <input type="radio" name="tipoTarjeta" id="tipoDebito" class='radiob' required> Debito
-    <input type="radio" name="tipoTarjeta" id="tipoCredito" class='radiob' required>Credito <br>
-    <label> <input type='text' minlength="16" maxlength="16" id='creditCardNumber' placeholder="Numero de tarjeta"
+    <input type="radio" name="tipoTarjeta" id="tipoDebito" class="radiob" required> Debito
+    <input type="radio" name="tipoTarjeta" id="tipoCredito" class="radiob" required>Credito <br>
+    <label> <input type="text" minlength="16" maxlength="16" id="creditCardNumber" placeholder="Numero de tarjeta"
         class="filded" required></label> <br>
     <br>
-    <label><input type='text' id="nombresTitular" class="filded" placeholder="Nombre titular de la tarjeta"
+    <label><input type="text" id="nombresTitular" class="filded" placeholder="Nombre titular de la tarjeta"
         required></label><br>
     <br>
     <h5 class="fildcd">T.I</h5>
@@ -69,18 +49,15 @@
       <option>C.E.</option>
       <option>P.</option>
     </select>
-    </label>
     <br>
-    <label><input type='text' id="idPersona" class="fildid" placeholder="Numero documento" required></label><br>
-    <label><input type='number' name="numero" id='numeroCuotas' class="fildod" placeholder="#Cuotas" required
-        size="7"></label>
-    <label><input type='month' id="expiracionTarjeta" class="fildod" placeholder=" MM/DD" required size="7"></label>
-    <input type="password" id="codigoT" class="fildod" placeholder="CCV" required size="7"></label>
-    </div>
+    <label><input type="text" id="idPersona" class="fildid" placeholder="Numero documento" required></label><br>
+    <label><input type="number" name="numero" id="numeroCuotas" class="fildod" placeholder="#Cuotas" required size="7"></label>
+    <label><input type="month" id="expiracionTarjeta" class="fildod" placeholder=" MM/DD" required size="7"></label>
+    <label><input type="password" id="codigoT" class="fildod" placeholder="CCV" required size="7"></label>
     <br>
     <h3>Envió de Factura</h3>
     <br>
-    <label><input type='text' id='Email' class="filded" placeholder="E-mail"></label> <br>
+    <label><input type="text" id="Email" class="filded" placeholder="E-mail"></label> <br>
     <br>
     <label><input type="text" id="direccionT" class="filded" placeholder="Dirección"> </label> <br>
     <script src="index.js" type="module"></script>
@@ -98,7 +75,8 @@
   <footer>
 
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="js/sweetAlert.js"></script>
 </body>
 
 </html>
