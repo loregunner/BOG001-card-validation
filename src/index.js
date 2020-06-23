@@ -13,11 +13,11 @@ function final(){
   
 
   if (validator.isvalid(creditCardNumber1)=== true ) {
-    swal(`Tu tarjeta ${decodificado} es válida`);
+    swal(`Tu tarjeta ${decodificado} es válida, tu compra ha sido exitosa`);
     //innerHeight ""
 
   } else {
-    swal(`Tu tarjeta ${decodificado} es inválida`);
+    swal(`Tu tarjeta ${decodificado} es inválida, intenta nuevamente`);
 
   }
  //  window.location.href = 'indexP4.html' 
