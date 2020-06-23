@@ -22,10 +22,7 @@ function final(){
   }
  //  window.location.href = 'indexP4.html' 
 }
-
-
-  
-
-
 const boton = document.getElementById("BotonTarjeta");
 boton.addEventListener("click", final); 
+
+  
