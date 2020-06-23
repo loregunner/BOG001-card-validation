@@ -188,6 +188,7 @@ form{
     font-family: Goudy;
     color: rebeccapurple;
     font-size: 20px;
+    top: 1000px;
     margin-bottom: 60px;
     border: thick;
     padding: 10px;
@@ -489,7 +490,7 @@ h1{
     font-size: 40px;
     margin-bottom: 20px;
 }
-a{
+b{
     text-decoration: none;
     font-size: 20px;
     display: inline-block;
@@ -499,7 +500,7 @@ a{
     border-radius: 10px;
     color: #fff;
 }
-a:hover{
+b:hover{
     background: #000000; color:#8f0e39; border: 1px solid #000000;
 }
 .modal2{
@@ -521,7 +522,7 @@ a:hover{
     width: 30%;
     box-shadow: 0 0 6px 0 #8f0e39(0,0,0,rgba(0, 0, 0, 0..4)) ;
     animation-name: modal;
-    animation-duration: 5s ;
+    animation-duration: 3s ;
 }
 @keyframes modal{
     from{top:-330px; opacity: 0;}
