@@ -1,3 +1,4 @@
+const { createTransformer } = require("babel-jest");
 
 let modal = document.getElementById("miModal");
 let flex = document.getElementById("flex");
@@ -6,4 +7,8 @@ let close = document.getElementById("close");
 
 abrir.addEventListener("click",function(){
   modal.style.display = "block";
+});
+
+createTransformer.addEventListener("click", function(){
+modal.style.display ="none";
 });
