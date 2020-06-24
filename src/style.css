@@ -486,9 +486,10 @@ header{
     color: #fefefe;
     text-align: center;
 }
-h1{
+ h6{
     font-size: 40px;
     margin-bottom: 20px;
+    color: #db1b5b;
 }
 b{
     text-decoration: none;
@@ -498,7 +499,7 @@ b{
     width: 220px;
     border: 1px solid #fefefe;
     border-radius: 10px;
-    color: #fff;
+    color: rgb(235, 13, 150);
 }
 b:hover{
     background: #000000; color:#8f0e39; border: 1px solid #000000;
