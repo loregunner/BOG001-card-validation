@@ -1,5 +1,4 @@
 let modal = document.getElementById("miModal");
-let flex = document.getElementById("flex");
 let abrir = document.getElementById("abrir1");
 let cerrar = document.getElementById("close");
 
